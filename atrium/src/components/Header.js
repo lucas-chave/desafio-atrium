@@ -15,8 +15,12 @@ const Header = () => {
 
 const Container = styled.header`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  width: 100%;
+  padding: 34px 0;
+  background: transparent;
+  position: relative;
 `;
 
 
