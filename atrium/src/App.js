@@ -1,10 +1,11 @@
 import React from 'react';
+import { BrowserRouter, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div>
-
-    </div>
+    <BrowserRouter>
+      <Route exact path="/" component={ Main } />
+    </BrowserRouter>
   );
 }
 
