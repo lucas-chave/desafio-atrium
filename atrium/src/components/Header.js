@@ -6,10 +6,13 @@ import logo from '../images/logo.svg'
 
 const Header = () => {
   return (
-    <Container>
-      <img src={ logo } alt="ícone de logo" />
-      <NavigationHeader />
-    </Container>
+    <>
+      <OuterElement />
+      <Container>
+        <img src={ logo } alt="ícone de logo" />
+        <NavigationHeader />
+      </Container>
+    </>
   );
 };
 
@@ -21,7 +24,14 @@ const Container = styled.header`
   padding: 34px 0;
   background: transparent;
   position: relative;
+
+
 `;
 
+const OuterElement = styled.div`
+  width: 100%;
+  height: 5px;
+  background: #0087E9;
+`;
 
 export default Header;
