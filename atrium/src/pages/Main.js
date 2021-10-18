@@ -1,10 +1,10 @@
 import React from 'react';
-import Header from '../components/Header';
+import SectionInitial from '../components/SectionInitial';
 
 const Main = () => {
   return (
     <div>
-      <Header />
+      <SectionInitial />
     </div>
   );
 };

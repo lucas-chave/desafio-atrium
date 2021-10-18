@@ -35,7 +35,7 @@ const Navigation = styled.nav`
       align-items: center;
       text-align: center;
       color: #0087E9;
-      margin: 0px 53.5px;
+      margin: 0px 0 0 107px;
       cursor: pointer;
     }
   }
