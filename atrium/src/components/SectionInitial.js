@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import imageBackground from '../images/backgroundImageSectionInitial.jpg';
+import CallToActionSingUp from './CallToActionSingUp';
 import Header from './Header';
 
 const SectionInitial = () => {
@@ -8,6 +9,7 @@ const SectionInitial = () => {
     <div>
       <Image src={ imageBackground } alt="imagem de um casal" />
       <Header />
+      <CallToActionSingUp />
     </div>
   );
 };

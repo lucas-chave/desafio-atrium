@@ -28,8 +28,6 @@ const ContainerHeader = styled.header`
   padding: 34px 0;
   background: transparent;
   position: relative;
-
-
 `;
 
 const OuterElement = styled.div`
