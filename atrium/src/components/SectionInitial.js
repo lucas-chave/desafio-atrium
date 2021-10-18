@@ -3,16 +3,23 @@ import styled from 'styled-components';
 import imageBackground from '../images/backgroundImageSectionInitial.jpg';
 import CallToActionSingUp from './CallToActionSingUp';
 import Header from './Header';
+import NavigationSection from './NavigationSection';
 
 const SectionInitial = () => {
   return (
-    <div>
+    <Container>
       <Image src={ imageBackground } alt="imagem de um casal" />
       <Header />
       <CallToActionSingUp />
-    </div>
+      <NavigationSection />
+    </Container>
   );
 };
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
 
 const Image = styled.img`
   width: 100%;
