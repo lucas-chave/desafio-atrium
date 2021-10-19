@@ -42,7 +42,7 @@ const SectionInfo = () => {
 const Container = styled.div`
   display: block;
   flex-direction: column;
-  position: absolute;
+  /* position: absolute; */
   margin-top: 10%;
 `;
 
@@ -78,8 +78,8 @@ const ContainerTexts = styled.div`
   display: flex;
   flex-direction: column;
   align-self: center;
-  width: 30%;
-
+  width: 45%;
+  padding: 30px;
   p {
     font-family: Spectral;
     font-weight: normal;

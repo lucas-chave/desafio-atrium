@@ -8,7 +8,7 @@ import NavigationSection from './NavigationSection';
 const SectionInitial = () => {
   return (
     <Container>
-      <Image src={ imageBackground } alt="imagem de um casal" />
+      {/* <Image src={ imageBackground } alt="imagem de um casal" /> */}
       <Header />
       <CallToActionSingUp />
       <NavigationSection />
@@ -19,6 +19,7 @@ const SectionInitial = () => {
 const Container = styled.div`
   display: flex;
   flex-direction: column;
+  background-image: url(${imageBackground});
 `;
 
 const Image = styled.img`
