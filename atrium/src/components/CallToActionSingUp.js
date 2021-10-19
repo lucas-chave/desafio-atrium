@@ -34,7 +34,17 @@ const ContainerCall = styled.div`
     line-height: 25px;
     text-align: center;
     color: #FFFFFF;
+    cursor: pointer;
+    &:hover {
+      box-shadow: 0px 3px 12px 3px #BAE7FA,  3.7428px 3px 4px rgba(155, 155, 155, 0.25);
+      width: 163px;
+      height: 44px;
+    }
   }
+  @media screen and (max-width: 890px) {
+    margin-top: 40px;
+  }
+
 `;
 
 const Container = styled.div`
@@ -43,6 +53,15 @@ const Container = styled.div`
 
   .separator {
     width: 350px;
+    @media screen and (max-width: 990px) {
+      width: 100px;
+    }
+    @media screen and (max-width: 890px) {
+      width: 50px;
+    }
+    @media screen and (max-width: 690px) {
+      display: none;
+    }
   }
 `;
 
@@ -60,6 +79,10 @@ const Phrase1 = styled.p`
     font-weight: 400;
     font-style: italic;
   }
+
+  @media screen and (max-width: 690px) {
+    font-size: 20px;
+  }
 `;
 
 const Phrase2 = styled.p`
@@ -75,6 +98,38 @@ const Phrase2 = styled.p`
     font-family: Kristi;
     font-weight: 400;
     font-size: 73px;
+
+    @media screen and (max-width: 690px) {
+    font-size: 67px;
+    margin: 0;
+    padding: 0;
+    }
+    @media screen and (max-width: 590px) {
+      font-size: 42px;
+      margin: 0;
+      padding: 0;
+    }
+    @media screen and (max-width: 490px) {
+      font-size: 32px;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  @media screen and (max-width: 690px) {
+    font-size: 37px;
+    margin: 0;
+    padding: 0;
+  }
+  @media screen and (max-width: 590px) {
+    font-size: 28px;
+    margin: 0;
+    padding: 0;
+  }
+  @media screen and (max-width: 490px) {
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
   }
 `;
 

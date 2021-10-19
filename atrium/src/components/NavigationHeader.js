@@ -56,11 +56,15 @@ const Navigation = styled.nav`
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0;
+  margin: 0;
 
   ul {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    padding: 0;
 
     li {
       list-style: none;
@@ -71,7 +75,7 @@ const Navigation = styled.nav`
       align-items: center;
       text-align: center;
       color: #0087E9;
-      margin: 0 0 0 107px;
+      width: 167px;
       cursor: pointer;
     }
 
@@ -83,9 +87,18 @@ const Navigation = styled.nav`
       height: 30px;
       border: solid 5px #000;
       border-color: transparent transparent #01DDE9 transparent;
-      border-radius: 50px 10px 160px 80%/25px;
-      margin: -35px 0 0 0;
+      border-radius: 0 0 160px 80%/25px;
+      margin: -35px 0 0 38px;
+      }
     }
+
+    @media screen and (max-width: 890px) {
+      justify-content: center;
+      align-items: center;
+
+      li {
+        margin: 10px 5px 10px 5px;
+      }
     }
   }
 `;

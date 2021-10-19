@@ -17,17 +17,19 @@ const Header = () => {
 };
 
 const Container = styled.div`
-  position: relative;
+  width: 100%;
+
 `;
 
 const ContainerHeader = styled.header`
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   width: 100%;
   padding: 34px 0;
   background: transparent;
-  position: relative;
+  /* position: relative; */
 `;
 
 const OuterElement = styled.div`

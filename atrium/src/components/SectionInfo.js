@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import image1 from '../images/unsplash_YRMWVcdyhmI.jpg';
+import image2 from '../images/unsplash_ggeZ9oyI-PE.jpg';
 import setaSelect from '../images/setaSelect.svg';
 
 const SectionInfo = () => {
@@ -33,7 +34,7 @@ const SectionInfo = () => {
             <option>Cursos</option>
           </Select>
         </ContainerTexts>
-        <img src={ image1 } alt="imagem de um auditório" />
+        <img className="image2" src={ image2 } alt="imagem de um auditório" />
       </SubContainer>
     </Container>
   );
@@ -61,6 +62,37 @@ const SubContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  @media screen and (max-width: 665px) {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .image2 {
+    @media screen and (max-width: 1040px) {
+      width: 520px;
+    }
+  @media screen and (max-width: 905px) {
+    width: 410px;
+  }
+  @media screen and (max-width: 805px) {
+    width: 310px;
+    }
+  }
+
+  @media screen and (max-width: 1040px) {
+    img {
+      width: 520px;
+    }
+  }
+  @media screen and (max-width: 905px) {
+    img {
+      width: 400px;
+    }
+  }
+  @media screen and (max-width: 805px) {
+    img {
+      width: 300px;
+    }
+  }
 `;
 
 const SubTitle = styled.h4`
@@ -71,6 +103,19 @@ const SubTitle = styled.h4`
   line-height: 45px;
   color: #0087E9;
   margin: 0;
+  @media screen and (max-width: 1040px) {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  @media screen and (max-width: 905px) {
+    font-size: 34px;
+    line-height: 38px;
+  }
+  @media screen and (max-width: 805px) {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
 `;
 
 const ContainerTexts = styled.div`
@@ -85,12 +130,15 @@ const ContainerTexts = styled.div`
     font-size: 16px;
     line-height: 27px;
     color: #161616;
+    @media screen and (max-width: 805px) {
+      font-size: 14px;
+      line-height: 18px;
+    }
   }
 `;
 
 const Select = styled.select`
   border: 1px solid #E3E3E3;
-  box-sizing: border-box;
   border-radius: 9px;
   width: 308.59px;
   height: 45.5px;
@@ -98,15 +146,20 @@ const Select = styled.select`
   background: url(${setaSelect}) no-repeat center right #FFF;
   font-family: Titillium Web;
   font-weight: bold;
-  overflow: hidden;
   background-position: 90% center;
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
   color: #0087E9;
-  padding: 7px 200px 7px 10px;
+  padding: 7px 10px 7px 10px;
   -webkit-appearance: none;
   -moz-appearance: none;
+
+  @media screen and (max-width: 805px) {
+    width: 240px;
+    height: 38px;
+    padding: 0 10px 0 10px;
+  }
 `;
 
 export default SectionInfo;

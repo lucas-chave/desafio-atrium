@@ -34,17 +34,36 @@ const Container = styled.nav`
       margin: 16px;
       padding: 10px;
       font-family: Spectral SC;
-      font-style: normal;
       font-weight: normal;
       font-size: 30px;
       line-height: 46px;
       align-items: center;
       color: #FFFFFF;
-
+      cursor: pointer;
       &::after {
         content: url(${ setaNavigation });
-        color: black;
+        display: flex;
+        align-self: center;
         margin-left: 30px;
+        @media screen and (max-width: 720px) {
+          margin-left: 15px;
+          margin-top: 12px;
+        }
+        @media screen and (max-width: 540px) {
+          display: none;
+          margin: 0;
+        }
+      }
+      @media screen and (max-width: 920px) {
+        font-size: 24px;
+      }
+
+      @media screen and (max-width: 720px) {
+        font-size: 16px;
+      }
+      @media screen and (max-width: 540px) {
+        font-size: 14px;
+        margin-left: 0;
       }
     }
 
@@ -54,7 +73,28 @@ const Container = styled.nav`
       background: rgba(255, 255, 255, 0.13);
     }
   }
+  @media screen and (max-width: 920px) {
+    height: 90px;
+  }
+  @media screen and (max-width: 720px) {
+    height: 60px;
+  }
+  @media screen and (max-width: 540px) {
+    height: 50px;
+    border-radius: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    ul {
+      margin: 0;
+      padding: 0;
 
+      li {
+        margin: 6px;
+        padding: 8px ;
+      }
+    }
+  }
 `;
 
 export default NavigationSection;
