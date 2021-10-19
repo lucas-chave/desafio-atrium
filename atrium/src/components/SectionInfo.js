@@ -42,8 +42,7 @@ const SectionInfo = () => {
 const Container = styled.div`
   display: block;
   flex-direction: column;
-  /* position: absolute; */
-  margin-top: 10%;
+  margin-top: -125px;
 `;
 
 const Title = styled.h4`

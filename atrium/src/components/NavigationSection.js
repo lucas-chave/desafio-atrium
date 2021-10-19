@@ -18,7 +18,7 @@ const NavigationSection = () => {
 
 const Container = styled.nav`
   display: flex;
-  margin-top: 190px;
+  margin: 90px 0 140px 0;
   align-self: flex-end;
   position: relative;
   height: 121px;
