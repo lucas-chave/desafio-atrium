@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
+import ItemFooterResponsive from './ItemFooterResponsive';
 import ListFooter from './ListFooter';
 import logoFooter from '../images/logo-bottom.svg';
 
 const Footer = () => {
+  const sizeDocument = document.body.clientWidth;
   const data = [
     {
       title: 'Instituição',
@@ -60,21 +62,34 @@ const Footer = () => {
   },
 ];
 
-  // const renderInformationResponsive = () => {
-    
-  // };
+  const renderInformation = () => {
+    return (
+      data.map(({ title, links}, index) => (
+        <ListFooter title={ title } links={ links } key={index} />
+      ))
+    );
+  };
+
+
 
   return (
     <>
-    <Container>
-      <FooterContainer>
-        {data.map(({ title, links}, index) => (
-          <ListFooter title={ title } links={ links } key={index} />
-          ))}
-      </FooterContainer>
-      <img src={logoFooter} alt="icone da logo" />
-    </Container>
-    <BorderBottom />
+      <Container>
+        {console.log(sizeDocument)}
+        <FooterContainer>
+          {Number(sizeDocument) > 855 ? renderInformation() : (
+            data.map(({ title, links }, index) => (
+              <ItemFooterResponsive 
+                title={title}
+                links={links}
+                key={ index }
+              />
+            ))
+          ) }
+        </FooterContainer>
+        <img src={logoFooter} alt="icone da logo" />
+      </Container>
+      <BorderBottom />
     </>
   );
 }
@@ -98,6 +113,11 @@ const Container = styled.div`
     height: 29px;
     padding: 50px 0 60px 0;
   }
+
+  @media screen and (max-width: 855px) {
+    padding-top: 0;
+    margin-top: 0;
+  }
 `;
 
 const BorderBottom = styled.div`
@@ -113,6 +133,13 @@ const FooterContainer = styled.div`
   width: 100%;
   background: #FFF;
   border-radius: 0 0 100px 100px;
+
+  @media screen and (max-width: 855px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export default Footer;

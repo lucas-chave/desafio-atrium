@@ -17,7 +17,6 @@ const ListFooter = (props) => {
 
 const Title = styled.h4`
   font-family: PT Sans;
-  font-style: normal;
   font-weight: bold;
   font-size: 20px;
   line-height: 26px;
