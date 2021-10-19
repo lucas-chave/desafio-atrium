@@ -55,6 +55,16 @@ const ContainerText = styled.div`
     font-size: 33px;
     line-height: 51px;
     color: #0067AC;
+    &::after {
+      content: '';
+      display: block;
+      width: 220px;
+      height: 30px;
+      border: solid 9px #000;
+      border-color: transparent transparent #01DDE9 transparent;
+      border-radius: 50px 10px 160px 80%/35px;
+      margin: -40px 0 0 -16px;
+    }
   }
   h5 {
     margin: 0;
