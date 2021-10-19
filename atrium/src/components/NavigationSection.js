@@ -39,8 +39,8 @@ const Container = styled.nav`
       font-size: 30px;
       line-height: 46px;
       align-items: center;
-
       color: #FFFFFF;
+
       &::after {
         content: url(${ setaNavigation });
         color: black;
