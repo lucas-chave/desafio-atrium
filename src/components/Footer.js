@@ -70,8 +70,6 @@ const Footer = () => {
     );
   };
 
-
-
   return (
     <>
       <Container>

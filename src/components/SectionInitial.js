@@ -22,7 +22,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   background-image: url(${imageBackground});
-  background-size: 100%;
+  background-size: 100% 100%;
 `;
 
 export default SectionInitial;
