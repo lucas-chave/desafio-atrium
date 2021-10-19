@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../components/Footer';
 import SectionInfo from '../components/SectionInfo';
 import SectionInitial from '../components/SectionInitial';
 import SectionQuote from '../components/SectionQuote';
@@ -9,6 +10,7 @@ const Main = () => {
       <SectionInitial />
       <SectionInfo />
       <SectionQuote />
+      <Footer />
     </div>
   );
 };
