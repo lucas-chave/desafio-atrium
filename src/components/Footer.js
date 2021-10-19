@@ -60,6 +60,10 @@ const Footer = () => {
   },
 ];
 
+  // const renderInformationResponsive = () => {
+    
+  // };
+
   return (
     <>
     <Container>

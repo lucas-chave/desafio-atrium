@@ -67,7 +67,10 @@ const SubContainer = styled.div`
     flex-wrap: wrap;
   }
   .image2 {
-    @media screen and (max-width: 1040px) {
+    @media screen and (max-width: 1310px) {
+      width: 650px;
+    }
+    @media screen and (max-width: 1100px) {
       width: 520px;
     }
   @media screen and (max-width: 905px) {
