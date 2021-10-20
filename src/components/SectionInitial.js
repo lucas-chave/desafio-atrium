@@ -5,9 +5,6 @@ import CallToActionSingUp from './CallToActionSingUp';
 import Header from './Header';
 import NavigationSection from './NavigationSection';
 
-const sizeHeight = document.body.clientHeight;
-
-console.log(sizeHeight);
 const SectionInitial = () => {
   return (
     <Container>

@@ -7,10 +7,10 @@ import setaButton from '../images/setaDropdown.svg';
 
 const SectionInfo = () => {
   return (
-    <Container>
+    <Container title="sectionInfo">
       <Title>Conheça a universidade</Title>
-      <SubContainer>
-        <img src={ image1 } alt="imagem de um auditório" />
+      <SubContainer title="containerTexts">
+        <img src={ image1 } alt="imagem de um auditório com pessoas" />
         <ContainerTexts>
           <SubTitle>Trace sua jornada</SubTitle>
           <p>
@@ -24,7 +24,7 @@ const SectionInfo = () => {
           </Select>
         </ContainerTexts>
       </SubContainer>
-      <SubContainer>
+      <SubContainer title="containerTexts">
         <ContainerTexts>
           <SubTitle>Biblioteca Central</SubTitle>
           <p>
@@ -32,7 +32,7 @@ const SectionInfo = () => {
           </p>
           <ButtonAccess>ACESSAR<img src={setaButton} alt="icone" /></ButtonAccess>
         </ContainerTexts>
-        <img className="image2" src={ image2 } alt="imagem de um auditório" />
+        <img className="image2" src={ image2 } alt="imagem de um corredor de uma biblioteca" />
       </SubContainer>
     </Container>
   );

@@ -40,13 +40,13 @@ const NavigationHeader = () => {
     changeTraceLink();
   }, [traceElement]);
   return (
-    <Navigation>
+    <Navigation title="menu-header">
       <ul>
         <li onClick={({ target }) => setTraceElement(target.id)} id="Educação">Educação</li>
         <li onClick={({ target }) => setTraceElement(target.id)} id="Pesquisa">Pesquisa</li>
         <li onClick={({ target }) => setTraceElement(target.id)} id="Alunos">Alunos</li>
-        <li onClick={({ target }) => setTraceElement(target.id)} id="Admissão" className="traceBottom">Admissão</li>
-        <li><img src={ iconSearch } alt="icone de pesquisa" /></li>
+        <li onClick={({ target }) => setTraceElement(target.id)} id="Admissão">Admissão</li>
+        <li><img src={ iconSearch } alt="icone de pesquisa do menu" /></li>
       </ul>
     </Navigation>
   );

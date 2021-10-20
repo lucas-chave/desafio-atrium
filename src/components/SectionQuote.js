@@ -6,11 +6,11 @@ import setaLeft from '../images/seta-button-left.svg';
 
 const SectionQuote = () => {
   return (
-    <Container>
+    <Container title="sectionQuote">
       <SubContainer>
         <img src={imageQuote} alt="imagem de Giovana Santos que faz a citação ao lado" />
         <ContainerText>
-          <p>
+          <p title="quote">
             “As aulas não são apenas teóricas. Nós começamos com teoria mas logo em seguida colocamos
             a mão na massa. Essa experiência é muito boa para estágios e para a vida profissional em geral.
             Na minha universidade anterior nós tínhamos bom material teórico mas não éramos ensinado esse conteúdo de maneira prática.”

@@ -4,9 +4,9 @@ import styled from 'styled-components';
 const CallToActionSingUp = () => {
   return (
     <Container>
-      <ContainerCall>
-        <Phrase1>Aprendizado traduzido com <span className="span1">excelência.</span></Phrase1>
-        <Phrase2>Inicie seu semestre em <span className="span2">classe</span></Phrase2>
+      <ContainerCall title="call-to-action">
+        <Phrase1 title="Aprendizado traduzido com">Aprendizado traduzido com <span className="span1">excelência.</span></Phrase1>
+        <Phrase2 title="Inicie seu semestre em">Inicie seu semestre em <span className="span2">classe</span></Phrase2>
         <button>Inscreva-se já</button>
       </ContainerCall>
       <div className="separator" />

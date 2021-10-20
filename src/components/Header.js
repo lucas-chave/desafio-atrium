@@ -7,9 +7,9 @@ import logo from '../images/logo.svg'
 const Header = () => {
   return (
     <Container>
-      <OuterElement />
+      <OuterElement title="bar-top" />
       <ContainerHeader>
-        <img src={ logo } alt="ícone de logo" />
+        <img src={ logo } alt="logo atrium" />
         <NavigationHeader />
       </ContainerHeader>
     </Container>

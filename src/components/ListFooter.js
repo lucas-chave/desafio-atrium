@@ -9,7 +9,7 @@ const ListFooter = (props) => {
       <Title>{title}</Title>
       <Links>
         { arrLinks.map((course, index) => (
-          <h5 key={ index }>{ course }</h5>
+          <li key={ index }>{ course }</li>
         ))}
       </Links>
     </div>
@@ -25,10 +25,10 @@ const Title = styled.h4`
   margin: 13px 0px;
 `;
 
-const Links = styled.div`
+const Links = styled.ul`
   margin: 0;
-
-  h5 {
+  padding: 0;
+  li {
     font-family: PT Sans;
     font-weight: normal;
     font-size: 17px;
@@ -36,7 +36,8 @@ const Links = styled.div`
     display: flex;
     align-items: center;
     color: #0087E9;
-    margin: 13px 0px;
+    margin: 13px 0;
+    list-style: none;
   }
 `;
 

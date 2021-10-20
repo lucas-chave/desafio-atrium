@@ -4,7 +4,7 @@ import setaNavigation from '../images/seta.svg';
 
 const NavigationSection = () => {
   return (
-    <Container>
+    <Container title="sectionNavigation">
       <ul>
         <li>Inscrição</li>
         <div />

@@ -83,10 +83,9 @@ const Footer = () => {
     );
   };
   
-
   return (
     <>
-      <Container>
+      <Container title="footer">
         <FooterContainer>
           {  render() }
         </FooterContainer>
@@ -130,7 +129,7 @@ const BorderBottom = styled.div`
   background: linear-gradient(262.38deg, rgba(0, 135, 233, 0.24) 0.58%, rgba(28, 183, 183, 0.24) 100%);;
 `;
 
-const FooterContainer = styled.div`
+const FooterContainer = styled.footer`
   display: flex;
   justify-content: space-around;
   width: 100%;
