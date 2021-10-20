@@ -5,7 +5,6 @@ import ListFooter from './ListFooter';
 import logoFooter from '../images/logo-bottom.svg';
 
 const Footer = () => {
-  const sizeDocument = document.body.clientWidth;
   const data = [
     {
       title: 'Instituição',
