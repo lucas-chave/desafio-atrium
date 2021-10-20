@@ -179,7 +179,7 @@ const ButtonAccess = styled.button`
   align-items: center;
   color: #0087E9;
   padding: 0 30px 0 15px;
-
+  cursor: pointer;
   img {
     width: 11px;
   }
