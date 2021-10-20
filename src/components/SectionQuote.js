@@ -39,12 +39,26 @@ const Buttons = styled.div`
     width: 86px;
     height: 63px;
     cursor: pointer;
+    @media screen and (max-width: 940px) {
+      width: 65px;
+    }
+    @media screen and (max-width: 740px) {
+      width: 40px;
+      height: 50px;
+    }
+  }
+  @media screen and (max-width: 670px) {
+    display: none;
   }
 `;
+
+
 
 const Container = styled.div`
   display: flex;
   background: linear-gradient(180deg, #DAF4FF 0%, #F8FDFF 100%);
+  margin-top: 10px;
+
 `;
 
 const SubContainer = styled.div`
