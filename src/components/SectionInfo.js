@@ -179,6 +179,10 @@ const ButtonAccess = styled.button`
   align-items: center;
   color: #0087E9;
   padding: 0 30px 0 15px;
+
+  img {
+    width: 11px;
+  }
   @media screen and (max-width: 805px) {
     width: 240px;
     height: 38px;

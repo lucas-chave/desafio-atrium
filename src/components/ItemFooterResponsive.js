@@ -41,8 +41,6 @@ const Container = styled.div`
   }
 
   ul {
-    /* position: absolute; */
-    /* background: #fff; */
     margin: 0;
     padding: 0 auto;
     li {

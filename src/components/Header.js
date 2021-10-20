@@ -29,7 +29,6 @@ const ContainerHeader = styled.header`
   width: 100%;
   padding: 34px 0;
   background: transparent;
-  /* position: relative; */
 `;
 
 const OuterElement = styled.div`

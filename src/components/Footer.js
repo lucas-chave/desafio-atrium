@@ -70,19 +70,26 @@ const Footer = () => {
     );
   };
 
+  const render = () => {
+    const w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+    if (w > 855) return renderInformation();
+    return (
+      data.map(({ title, links }, index) => (
+        <ItemFooterResponsive 
+          title={title}
+          links={links}
+          key={ index }
+        />
+      ))
+    );
+  };
+  
+
   return (
     <>
       <Container>
         <FooterContainer>
-          {Number(sizeDocument) > 855 ? renderInformation() : (
-            data.map(({ title, links }, index) => (
-              <ItemFooterResponsive 
-                title={title}
-                links={links}
-                key={ index }
-              />
-            ))
-          ) }
+          {  render() }
         </FooterContainer>
         <img src={logoFooter} alt="icone da logo" />
       </Container>
