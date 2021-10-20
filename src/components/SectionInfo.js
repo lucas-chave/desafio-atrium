@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import image1 from '../images/unsplash_YRMWVcdyhmI.jpg';
 import image2 from '../images/unsplash_ggeZ9oyI-PE.jpg';
 import setaSelect from '../images/setaSelect.svg';
+import setaButton from '../images/setaDropdown.svg';
 
 const SectionInfo = () => {
   return (
@@ -29,10 +30,7 @@ const SectionInfo = () => {
           <p>
           Com um acervo digitalizado de mais de 20.000 obras, a Biblioteca Central está de portas abertas para a comunidade acadêmica.
           </p>
-          <Select>
-            <option>Cursos</option>
-            <option>Cursos</option>
-          </Select>
+          <ButtonAccess>ACESSAR<img src={setaButton} alt="icone" /></ButtonAccess>
         </ContainerTexts>
         <img className="image2" src={ image2 } alt="imagem de um auditório" />
       </SubContainer>
@@ -158,6 +156,29 @@ const Select = styled.select`
   -webkit-appearance: none;
   -moz-appearance: none;
 
+  @media screen and (max-width: 805px) {
+    width: 240px;
+    height: 38px;
+    padding: 0 10px 0 10px;
+  }
+`;
+
+const ButtonAccess = styled.button`
+  border: 1px solid #E3E3E3;
+  border-radius: 9px;
+  width: 308.59px;
+  height: 45.5px;
+  font-family: Titillium Web;
+  font-weight: bold;
+  background-position: 90% center;
+  font-size: 18px;
+  line-height: 30px;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #0087E9;
+  padding: 0 30px 0 15px;
   @media screen and (max-width: 805px) {
     width: 240px;
     height: 38px;

@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import imageQuote from '../images/unsplash_FcLyt7lW5wg.jpg';
+import setaButton from '../images/seta-button.svg';
+import setaLeft from '../images/seta-button-left.svg';
 
 const SectionQuote = () => {
   return (
@@ -17,9 +19,28 @@ const SectionQuote = () => {
           <h5>Bacharel em Ciência da Computação</h5>
         </ContainerText>
       </SubContainer>
+      <Buttons>
+        <button><img src={ setaButton } alt="Icone de botão" /></button>
+        <button><img src={ setaLeft } alt="Icone de botão" /></button>
+      </Buttons>
     </Container>    
   );
 }
+
+const Buttons = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  button {
+    border: none;
+    background: #0087E9;
+    width: 86px;
+    height: 63px;
+    cursor: pointer;
+  }
+`;
 
 const Container = styled.div`
   display: flex;
