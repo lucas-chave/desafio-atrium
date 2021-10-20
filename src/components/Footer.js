@@ -73,7 +73,6 @@ const Footer = () => {
   return (
     <>
       <Container>
-        {console.log(sizeDocument)}
         <FooterContainer>
           {Number(sizeDocument) > 855 ? renderInformation() : (
             data.map(({ title, links }, index) => (
